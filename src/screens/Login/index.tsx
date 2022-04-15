@@ -1,12 +1,20 @@
 import React from "react";
-import {Text} from "react-native";
-
 import {Teste} from "components/teste";
+import {LayoutGeneral} from "layout/general";
 
 export function Login() {
   return (
-    <Text>
+    <LayoutGeneral>
       <Teste />
-    </Text>
+      <Teste />
+      <Teste />
+      <Teste />
+      <Teste />
+      <Teste />
+      <Teste />
+      <Teste />
+      <Teste />
+      <Teste />
+    </LayoutGeneral>
   );
 }

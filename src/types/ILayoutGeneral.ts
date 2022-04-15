@@ -1,4 +1,5 @@
-import {ReactElement} from "react";
+import {ReactNode} from "react";
+// import {ReactElement} from "react";
 export interface ILayoutGeneral {
-  children: ReactElement;
+  children: ReactNode;
 }

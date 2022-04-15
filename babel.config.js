@@ -19,6 +19,7 @@ module.exports = {
         alias: {
           components: './src/components',
           types: './src/types',
+          layout: './src/layout',
         },
       },
     ]
