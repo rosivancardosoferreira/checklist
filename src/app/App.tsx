@@ -1,14 +1,13 @@
 import React from "react";
-import {Text} from "react-native";
-import {Teste} from "components/teste";
-import {Novo} from "components/novo";
+import {Navigation} from "src/navigation/public";
+import {ThemeProvider} from "styled-components";
+import theme from "src/styles/theme";
+import {StatusBar} from "react-native";
 export function App() {
   return (
-    <Text>
-      Opa
-      {"\n\n\n"}
-      <Teste />
-      <Novo />
-    </Text>
+    <ThemeProvider theme={theme}>
+      <StatusBar backgroundColor={"#00336e"} />
+      <Navigation />
+    </ThemeProvider>
   );
 }

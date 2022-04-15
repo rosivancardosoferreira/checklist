@@ -1,0 +1,1 @@
+export {ILayoutGeneral} from "./ILayoutGeneral";
