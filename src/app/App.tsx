@@ -1,6 +1,6 @@
 import React from "react";
 import {Text} from "react-native";
 
-export function Login() {
-  return <Text>lOGIN</Text>;
+export function App() {
+  return <Text>Opa</Text>;
 }
