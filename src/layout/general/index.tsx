@@ -1,15 +1,22 @@
 import React from "react";
-import {ScrollView, StatusBar} from "react-native";
+import {StatusBar} from "react-native";
 import {SafeAreaView} from "react-native-safe-area-context";
 
-import {ILayoutGeneral} from "types";
+// TYPES
+import {ILayoutGeneral} from "types/screens";
+
+import {ContainerScrollView} from "./style";
+
 export function LayoutGeneral({children}: ILayoutGeneral) {
   return (
-    <SafeAreaView style={{paddingHorizontal: 20}}>
+    <SafeAreaView>
       <StatusBar barStyle="light-content" />
-      <ScrollView contentInsetAdjustmentBehavior="automatic">
+      <ContainerScrollView
+        contentInsetAdjustmentBehavior="automatic"
+        showsVerticalScrollIndicator={false}
+        showsHorizontalScrollIndicator={false}>
         {children}
-      </ScrollView>
+      </ContainerScrollView>
     </SafeAreaView>
   );
 }

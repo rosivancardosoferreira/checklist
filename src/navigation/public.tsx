@@ -5,19 +5,19 @@ import {NavigationContainer} from "@react-navigation/native";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
 
 //SCREENS
-import {Login} from "src/screens";
+import {Start} from "src/screens";
 
 export function Navigation() {
   const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
       <Stack.Navigator
-        screenOptions={{headerStyle: {backgroundColor: "red"}}}
-        initialRouteName="Onboarding">
+        // screenOptions={{headerStyle: {backgroundColor: "red"}}}
+        initialRouteName="Start">
         <Stack.Screen
           options={{headerShown: false}}
-          name="Onboarding"
-          component={Login}
+          name="Start"
+          component={Start}
         />
       </Stack.Navigator>
     </NavigationContainer>
