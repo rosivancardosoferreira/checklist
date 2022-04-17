@@ -1,17 +1,43 @@
 import React from "react";
-import {ImageBackground, Text} from "react-native";
+import {ImageBackground} from "react-native";
 
 // COMPONENTS
-// STYLES
-import {ContainerBackground, ContainerStart} from "./style";
 
-export function Start() {
+// ASSETS
+import {Images} from "assets/images";
+
+// STYLES
+import {
+  ButtonNav,
+  ContainerBackground,
+  ContainerStart,
+  ControlScreen,
+  StartView,
+  SubTitleStart,
+  TitleStart,
+} from "./style";
+import {SimpleText} from "src/styles/shared";
+
+import {INavigation} from "types/navigation";
+
+export function Start({navigation}: INavigation) {
   return (
     <ImageBackground
-      source={{uri: "https://reactjs.org/logo-og.png"}}
-      style={ContainerBackground}>
+      source={Images.BackgrounStart}
+      style={ContainerBackground}
+      resizeMode="cover">
       <ContainerStart>
-        <Text>paddin hero homem</Text>
+        <StartView>
+          <TitleStart>CheckEasy</TitleStart>
+          <SubTitleStart>
+            Faça seu checklist e fique sempre organizado. É fácil e simples.
+          </SubTitleStart>
+        </StartView>
+        <ControlScreen>
+          <ButtonNav onPress={() => navigation.navigate("ListItems")}>
+            <SimpleText>Ir para o início</SimpleText>
+          </ButtonNav>
+        </ControlScreen>
       </ContainerStart>
     </ImageBackground>
   );

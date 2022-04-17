@@ -20,6 +20,7 @@ module.exports = {
           components: './src/components',
           types: './src/types',
           layout: './src/layout',
+          assets: './src/assets',
         },
       },
     ]

@@ -1,10 +1,13 @@
-import {DefaultTheme} from "styled-components";
-
-const theme: DefaultTheme = {
+const theme = {
   colors: {
     primary: {
-      red: "red",
+      white: "#FFFFFF",
     },
+  },
+  fontSize: {
+    norma1: "16px",
+    large1: "25px",
+    large2: "28px",
   },
 };
 
